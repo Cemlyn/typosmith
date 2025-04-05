@@ -8,6 +8,10 @@ Typosmith is a project that leverages the [GitHub Typo Corpus](https://github.co
 - Analyze patterns in common typographical errors
 - Build models for typo generations
 
+<img src="data/letter_network_adjacent.png" width="1000" alt="Typo Network showing connections between adjacent keyboard keys">
+
+The visualization above shows the network of typos based on adjacent keyboard keys. The brightness and thickness of edges indicate how frequently certain key substitutions occur in the dataset.
+
 ## Dataset Source
 
 This project uses the GitHub Typo Corpus, a large-scale multilingual dataset of misspellings and grammatical errors collected from GitHub commits. The dataset contains:
