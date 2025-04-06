@@ -27,8 +27,7 @@ fmt:
 
 # Clean up downloaded files
 clean:
-	$(RM_CMD) $(DATASET_FILE) $(DECOMPRESSED_FILE)
-	$(RMDIR_CMD) data 2>/dev/null || true
+	python src/preprocess_json.py
 
 create-char-counts:
 	python src/create_char_counts.py
@@ -40,3 +39,6 @@ create-plots:
 create-char-counts-and-plots:
 	make create-char-counts
 	make create-plots
+
+train-typo-model:
+	python src/train_typo_model.py
